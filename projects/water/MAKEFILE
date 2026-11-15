@@ -1,0 +1,17 @@
+TARGET = WATER
+OBJS = WATER.OBJ MAIN.OBJ
+CC = WPP386
+CCOPT = /oneatx /oh /oi+ /ei /zp8 /5 /fp5 /d0
+LINKOPT = @d:\EOS\RESOURCE\EOS.LNK SYSTEM EOS_C
+LINKER = WLINK
+
+$(TARGET).EXE : $(OBJS) MAKEFILE
+          $(LINKER) N $(TARGET) F {$(OBJS)} F c:\eos\resource\wgif.obj $(LINKOPT)
+
+WATER.OBJ : WATER.H WATER.CPP MAKEFILE
+          $(CC) $(CCOPT) WATER.CPP
+
+MAIN.OBJ  : WATER.H MAIN.CPP MAKEFILE
+          $(CC) $(CCOPT) MAIN.CPP
+
+

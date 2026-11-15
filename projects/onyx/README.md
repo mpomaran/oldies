@@ -1,9 +1,5 @@
-# Onyx Direct3D screen experiment
+# Onyx on Direct3D 8
 
-Direct3D 8 screen-management and vertex-buffer experiment. Start with `dx8.screen.cpp` and `vertexBufffer.h`.
+A Win32 experiment in setting up a Direct3D 8 device and working with vertex buffers. Start with [dx8.screen.cpp](dx8.screen.cpp).
 
-## Archive notes
-
-Recovered from the April 2002 backup. The surviving snapshot has no verified individual author credit.
-The source uses the original Visual C++ project format where available. A current toolchain may require porting.
-See the [archive index](../../README.md) for curator and profile links.
+There's also an older DOS Onyx v2 in my backups. It used VESA modes and rendered textured, Gouraud-shaded triangles in software.

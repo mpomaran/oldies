@@ -1,0 +1,49 @@
+#
+#	makefile dla projektu "Kompresor Huffmana"
+#
+#	Autor:	Michal Pomaranski
+#	Kontakt:	mpomaran@elektron.elka.pw.edu.pl
+#
+#	PUBLIC DOMAIN
+#
+
+#	zmienne dotyczace kompilatora i linkera
+TARGET = cmprss
+CC = gcc
+LINK = gcc
+CCOPT = -c -d3
+LINKOPT = -d3
+RMCMD = del
+
+#	pliki potrzebne do kompilacji
+OBJS = cmprss.o tree.o queue.o misc.o main.o bitio.o
+
+$(TARGET): makefile $(OBJS)
+	$(LINK) $(LINKOPT) -o $(TARGET) $(OBJS)
+
+cmprss.o: makefile cmprss.h cmprss.c tree.h misc.h
+	$(CC) $(CCOPT) -o cmprss.o cmprss.c
+
+tree.o: makefile tree.h queue.h misc.h tree.c
+	$(CC) $(CCOPT) -o tree.o tree.c
+
+queue.o: makefile queue.h queue.c misc.h
+	$(CC) $(CCOPT) -o queue.o queue.c
+
+misc.o: makefile misc.h misc.c
+	$(CC) $(CCOPT) -o misc.o misc.c
+
+main.o: makefile cmprss.h bitio.h main.c
+	$(CC) $(CCOPT) -o main.o main.c
+
+bitio.o: makefile bitio.h bitio.c misc.h
+	$(CC) $(CCOPT) -o bitio.o bitio.c
+
+clean:
+	$(RMCMD) cmprss.o
+	$(RMCMD) tree.o
+	$(RMCMD) queue.o
+	$(RMCMD) misc.o
+	$(RMCMD) main.o
+	$(RMCMD) bitio.o
+

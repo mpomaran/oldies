@@ -1,9 +1,3 @@
-# Adaptive Huffman coding
+# Adaptive Huffman
 
-2001 C++ encoder/decoder experiment combining adaptive Huffman coding with run-length encoding. The algorithm notes and driver are in `main.cpp`.
-
-## Archive notes
-
-Recovered from the April 2002 backup. Michał Pomarański is credited in [`main.cpp`](main.cpp).
-The source uses the original Visual C++ project format where available. A current toolchain may require porting.
-See the [archive index](../../README.md) for curator and profile links.
+A C++ experiment combining adaptive Huffman coding with run-length encoding. [main.cpp](main.cpp) has the original algorithm notes. For a simpler implementation, see [Huffman in C](../huffman-c/).

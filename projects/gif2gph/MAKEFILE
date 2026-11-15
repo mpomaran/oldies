@@ -1,0 +1,8 @@
+CCOPT = /oneatx /oh /oi+ /ei /zp8 /5 /fp5 /d0
+RES = c:\eos\resource
+
+gif2gph.exe: makefile gif2gph.obj
+          wlink n gif2gph f gif2gph.obj,$(RES)\wgif.obj @$(RES)\eos.lnk system eoslite_c
+
+gif2gph.obj: gif2gph.c
+          wpp386 $(CCOPT) gif2gph.c

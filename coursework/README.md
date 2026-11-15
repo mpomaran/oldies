@@ -1,6 +1,6 @@
-# Study archive
+# Coursework
 
-Catalog of subjects with selected source artifacts. The study backup also contains reference material, documents and installers.
+A few lab programs and notes from university.
 
 - [ANG](ANG/) — English-language coursework and writing exercises.
 - [arko](arko/) — Computer architecture, assembly-language instruction, and MIPS and SPARC material.
