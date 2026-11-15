@@ -20,6 +20,8 @@ Curated by **Michał Pomarański (Michal Pomaranski)** · [GitHub](https://githu
 
 ## Code worth opening
 
+- [MINIX producer–consumer lab](coursework/sop/minix-ipc/) uses process messages and preserves an early author credit alongside the `kiwi` handle.
+
 - [Adaptive Huffman and run-length coding](projects/huffman/main.cpp) documents the interaction of two compression techniques in an early C++ implementation.
 - [Recursive terrain generation](projects/fract01/makeTerrain.cpp#L112) passes a roughness parameter through a recursive height-field subdivision.
 
