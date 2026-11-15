@@ -1,0 +1,34 @@
+target = cubetst
+objs = cube.obj 3dtest.obj blur.obj noise.obj random.obj flash.obj monopal.obj cubepart.obj
+libs = 3d.lib
+ccopt =
+res = c:\eos\resource
+linkopt = @$(RES)\eos.lnk system eoslite_c
+cc = wpp386
+
+$(target).exe: $(objs) makefile
+          wlink L $(libs) N $(target).exe @link $(linkopt)
+
+monopal.obj: monopal.h monopal.cpp
+          $(CC) $(CCOPT) monopal.cpp
+
+blur.obj: blur.h blur.cpp
+          $(CC) $(CCOPT) blur.cpp
+
+noise.obj: noise.h noise.cpp
+          $(CC) $(CCOPT) noise.cpp
+
+flash.obj: flash.h flash.cpp
+          $(CC) $(CCOPT) flash.cpp
+
+random.obj: random.h random.cpp
+          $(CC) $(CCOPT) random.cpp
+
+cube.obj: cube.h cube.cpp
+          $(cc) $(ccopt) cube.cpp
+
+3dtest.obj: 3dtest.cpp
+          $(cc) $(ccopt) 3dtest.cpp
+
+cubepart.obj: cubepart.h cubepart.cpp
+          $(cc) $(ccopt) cubepart.cpp

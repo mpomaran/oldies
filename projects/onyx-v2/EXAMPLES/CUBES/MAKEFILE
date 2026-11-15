@@ -1,0 +1,17 @@
+#
+#               Przyklad CUBES
+#
+
+compiler = WPP386
+compOptions = /oneatx /oh /oi+ /ei /zp8 /5 /fp5 /d0
+linkOptions =
+objs = cubes.obj
+libs = ..\..\lib\onyx3d.lib
+
+cubes.exe: $(objs) makefile $(libs)
+          wlink N cubes.exe $(linkOptions) F {$(objs)} L {$(libs)}
+          del *.obj
+
+.cpp.obj:
+          $(compiler) $(compOptions) $*.cpp
+

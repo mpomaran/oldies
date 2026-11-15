@@ -1,0 +1,12 @@
+compiler = WPP386
+compOptions = /oneatxrms /oh /oi+ /ei /zp8 /5 /fp5 /d0
+#compOptions = /d3
+
+objs = object.obj list.obj triangle.obj 3dio.obj text.obj
+
+.cpp.obj:
+          $(compiler) $(compOptions) $*.cpp
+
+engine3d.lib: makefile $(objs)
+          wlib -n engine3d.lib +object.obj +3dio.obj +list.obj +triangle.obj +text.obj
+          del *.obj

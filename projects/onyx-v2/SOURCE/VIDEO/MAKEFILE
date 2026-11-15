@@ -1,0 +1,13 @@
+compiler = WPP386
+compOptions = /oneatxrms /oh /oi+ /ei /zp8 /5 /fp5 /d0
+#compOptions = /d3
+
+objs = tcz16m.obj gtcz16m.obj gtc16m.obj fb16m.obj tc16m.obj ptcz16m.obj
+
+.cpp.obj:
+          $(compiler) $(compOptions) $*.cpp
+
+video.lib: makefile $(objs)
+          wlib -n video.lib +gtc16m.obj +gtcz16m.obj +tcz16m.obj +tc16m.obj +fb16m.obj
+#          del *.obj
+

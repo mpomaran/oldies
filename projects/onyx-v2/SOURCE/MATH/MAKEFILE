@@ -1,0 +1,15 @@
+compiler = WPP386
+compOptions = /oneatxrms /oh /oi+ /ei /zp8 /5 /fp5 /d3
+#compOptions = /d3
+objs = matrix.obj transfor.obj vertex3d.obj
+
+math.lib: makefile $(objs)
+          wlib -n math.lib +matrix.obj +transfor.obj +vertex3d.obj
+          del *.obj
+
+#vertex3d.obj:
+#          $(compiler) /oneatxrms /oh /ei /zp8 /5 /fp5 /d3 vertex3d.cpp
+
+.cpp.obj:
+          $(compiler) $(compOptions) $*.cpp
+

@@ -1,0 +1,16 @@
+#
+#               Przyklad ROTOR
+#
+
+compiler = WPP386
+compOptions = /oneatx /oh /oi+ /ei /zp8 /5 /fp5 /d0
+linkOptions =
+objs = gif2ont.obj wgif.obj
+libs =
+
+gif2ont.exe: $(objs) makefile $(libs)
+          wlink N gif2ont.exe $(linkOptions) F {$(objs)} @c:\eos\resource\eos.lnk system eoslite_c
+
+.c.obj:
+          $(compiler) $(compOptions) $*.c
+

@@ -1,0 +1,12 @@
+compiler = WPP386
+compOptions = /oneatxrms /oh /oi+ /ei /zp8 /5 /fp5 /d3
+#compOptions = /d3
+
+objs = rmi.obj vesa.obj
+
+.cpp.obj:
+          $(compiler) $(compOptions) $*.cpp
+
+low-lev.lib: makefile $(objs)
+          wlib -n low-lev.lib +rmi.obj +vesa.obj
+          del *.obj

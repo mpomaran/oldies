@@ -1,0 +1,17 @@
+#
+#               Przyklad ROTOR
+#
+
+compiler = WPP386
+compOptions = /oneatx /oh /oi+ /ei /zp8 /5 /fp5 /d0
+linkOptions =
+objs = rotor.obj
+libs = ..\..\lib\onyx3d.lib
+
+rotor.exe: $(objs) makefile $(libs)
+          wlink N rotor.exe $(linkOptions) F {$(objs)} L {$(libs)} @c:\eos\resource\eos.lnk system eos_c
+          del *.obj
+
+.cpp.obj:
+          $(compiler) $(compOptions) $*.cpp
+

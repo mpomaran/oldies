@@ -1,0 +1,13 @@
+compiler = WPP386
+compOptions = /oneatxrms /oh /oi+ /ei /zp8 /5 /fp5 /d0
+#compOptions = /d3
+
+objs = defs.obj textlib.obj
+
+.cpp.obj:
+          $(compiler) $(compOptions) $*.cpp
+
+misc.lib: makefile $(objs)
+          wlib -n misc.lib +defs.obj +textlib.obj
+          del *.obj
+

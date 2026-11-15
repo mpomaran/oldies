@@ -1,0 +1,15 @@
+copy banner.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\MATH\matrix.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\MATH\vector3d.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\MATH\transfor.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\MATH\vertex3d.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\MISC\defs.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\MISC\textlib.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\VIDEO\mappers.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\VIDEO\vfb.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\VIDEO\fb16m.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\LOW-LEV\rmi.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\LOW-LEV\vesa.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\ENGINE3D\list.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\ENGINE3D\object.h onyx3d.h
+copy onyx3d.h+D:\HADES\ONYX_V2\SOURCE\end.h onyx3d.h

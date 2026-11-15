@@ -1,7 +1,9 @@
 # UFO
 
-A spinning-cube scene and a blur routine from a DOS demo project. [CUBEPART.CPP](CUBEPART.CPP) sets up the scene and loads a bitmap used for shading the cubes.
+I worked on this DOS demo as Sarin/!ArisE!. There are spinning cubes, flashes, noise and a blur that smears the image across a 320×200 VGA screen.
 
-[BLUR.CPP](BLUR.CPP#L5) is a small Watcom x86 loop. It adds four neighbors from a 320-pixel-wide buffer and shifts right by two to get their average. `ESI` and `EDI` walk the input and output one byte at a time.
+[3DPART/3DTEST.CPP](3DPART/3DTEST.CPP) is the entry point for the cube test. [BLUR.CPP](BLUR.CPP#L5) has the Watcom x86 loop that adds four neighboring pixels and shifts right by two.
 
-These are scene sources. The original EOS dependencies and demo assets are needed to build the scene.
+[DATA](DATA/) has the original GPH animations and fonts, raw images and tracker music, including [MUSIC.MOD](DATA/MUSIC.MOD) and [another file with the same name](DATA/MUSIC-ALT.MOD) from outside the RAR. The cube test has its own [BMP.RAW](3DPART/BMP.RAW).
+
+The [makefile](3DPART/MAKEFILE) uses Watcom C++, EOS and the original 3D library.

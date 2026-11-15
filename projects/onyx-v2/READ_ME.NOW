@@ -1,0 +1,10 @@
+To jest dopiero BETA wersja, bez dokumentacji, z przykladami ktore sluza
+tylko do testow. Brak prawidlowego ladowania plikow .asc. Pliki
+.3ds nie sa ladowane wcale, co (mam nadzieje) sie wkrotce zmieni
+(powstanie narzedzie sluzace do konwersji .3ds<-->.onx).
+Brak biblioteki sluzacej do zarzadzania teksturami.
+
+Z tego powodu ta wersja nie jest SHAREWARE, lecz FREEWARE.
+
+        Michal Pomaranski
+        mpomaran@elektron.elka.pw.edu.pl
