@@ -13,3 +13,7 @@ This is the freeware beta from `onyx.zip`. [BUILD.BAT](BUILD.BAT) uses Watcom to
 ## DOSBox-X clip
 
 [Watch the CUBES test](cubes-dosbox.mp4). Press `1` for 320×200, then `1` for the textured Gouraud renderer. Space ends the run and prints the timing. This test has no audio.
+
+## Duck demo
+
+[Watch SHOWBIN in DOSBox-X](duck-dosbox.mp4). [SHOWBIN](EXAMPLES/SHOWBIN/A0.CPP) loads the binary duck model and a texture, then rotates and lights the model. The clip includes the music played by the demo. [LOADTST](EXAMPLES/LOADTST/A0.CPP) shows the other end of the process, converting the ASCII model to the binary format.
