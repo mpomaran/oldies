@@ -7,3 +7,7 @@ I worked on this DOS demo as Sarin/!ArisE!. There are spinning cubes, flashes, n
 [DATA](DATA/) has the original GPH animations and fonts, raw images and tracker music, including [MUSIC.MOD](DATA/MUSIC.MOD) and [another file with the same name](DATA/MUSIC-ALT.MOD) from outside the RAR. The cube test has its own [BMP.RAW](3DPART/BMP.RAW).
 
 The [makefile](3DPART/MAKEFILE) uses Watcom C++, EOS and the original 3D library.
+
+## DOSBox-X clip
+
+[Watch the CUBETST scene](cubetst-dosbox.mp4). This is the standalone cube test. It plays silently and kept running the same scene after Space, Enter and Esc.
