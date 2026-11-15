@@ -8,4 +8,4 @@ The original build uses Watcom C++ and EOS. The code is here. The GIFs, tracker 
 
 ## DOSBox-X clip
 
-[Watch 20 seconds of Water](water-dosbox.mp4). This run uses the original DOS effect with a replacement checkerboard and a test MOD. The audio was recorded from the emulator while it played the module. Space starts the effect from the intro. Enter during the effect returns to DOS.
+[Watch Water](water-dosbox.mp4). The DOS effect runs over a checkerboard with the music from the backup. The sound comes straight from DOSBox-X. Space starts the effect from the intro. Enter during the effect returns to DOS.
