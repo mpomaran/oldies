@@ -7,10 +7,11 @@ inline x86, plus the original graphics and tracker music. The [fractal terrain a
 - **DOS graphics** · [ANIMPART](projects/animpart/) · [MAIN.EXE](projects/hades-main/) · [Onyx v2](projects/onyx-v2/) · [Water](projects/water/) · [UFO](projects/ufo/) · [GIF2GPH](projects/gif2gph/)
 - **Windows graphics** · [Onyx on Direct3D 8](projects/onyx/) · [Fractal terrain](projects/fract01/) · [Fractal raster](projects/fractal/)
 - **C and C++** · [Huffman in C](projects/huffman-c/) · [Adaptive Huffman](projects/huffman/) · [Lake](projects/lake/) · [Matrix math](projects/matrixMath/) · [Geometry engine](projects/engine/)
+- **Diskmag** · [Keevee's Zin](projects/keevees-zin/)
 - **Audio utilities** · [CD player](projects/cdplayer/) · [TagRead](projects/tagread/)
 - **University** · [MINIX labs](coursework/sop/minix-ipc/) · [Coursework](coursework/)
 
-I used to go by `sarin/!Arise!`.
+I used to go by `sarin/!Arise!` and `MechWarrior`.
 
 My [bf-radio](https://github.com/mpomaran/bf-radio) repo is where I've been working on a C++ audio modem.
 
