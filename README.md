@@ -10,6 +10,8 @@ inline x86, plus the original graphics and tracker music. The [fractal terrain a
 - **Audio utilities** · [CD player](projects/cdplayer/) · [TagRead](projects/tagread/)
 - **University** · [MINIX labs](coursework/sop/minix-ipc/) · [Coursework](coursework/)
 
+I used to go by `sarin/!Arise!`.
+
 My [bf-radio](https://github.com/mpomaran/bf-radio) repo is where I've been working on a C++ audio modem.
 
 Michał Pomarański (Michal Pomaranski) · [GitHub](https://github.com/mpomaran) · [LinkedIn](https://www.linkedin.com/in/michal-pomaranski/)
